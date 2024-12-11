@@ -1,4 +1,4 @@
-import { LocationCard } from "@/components/location-card";
+import { LocationCard } from "@/app/ui/Location-card";
 
 export default function Page() {
   const locations = [
@@ -21,6 +21,7 @@ export default function Page() {
         female: 52,
         crowdedness: 20,
       },
+      image: "GyeongbokgungPalace.png",
     },
     {
       title: "남산서울타워",
@@ -41,6 +42,7 @@ export default function Page() {
         female: 55,
         crowdedness: 85,
       },
+      image: "NamsanSeoulTower.png",
     },
     {
       title: "북촌한옥마을",
@@ -61,6 +63,7 @@ export default function Page() {
         female: 53,
         crowdedness: 60,
       },
+      image: "BukchonHanokVillage.png",
     },
   ];
 

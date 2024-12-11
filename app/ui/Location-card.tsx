@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import {
   MapPin,
@@ -14,11 +13,13 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
+// import { TransportTabs } from "@/app/ui/TransportTabs";
 
 interface LocationCardProps {
   title: string;
   district: string;
   description: string;
+  image: string;
   weather?: {
     pm10?: number;
     pm25?: number;
@@ -40,6 +41,7 @@ export function LocationCard({
   title,
   district,
   description,
+  image,
   weather,
   transport,
   demographics,
@@ -55,7 +57,11 @@ export function LocationCard({
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="h-48 bg-muted rounded-md flex items-center justify-center">
-          {title} 그림
+          <img
+            src={image}
+            alt={`${title} 이미지`}
+            className="h-full w-full object-cover"
+          />{" "}
         </div>
 
         <div className="flex items-center gap-2 text-muted-foreground">
