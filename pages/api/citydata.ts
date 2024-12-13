@@ -2,7 +2,7 @@ import axios from "axios"; // axios 라이브러리를 통해 HTTP 요청을 보
 import { NextApiRequest, NextApiResponse } from "next"; // Next.js의 API Route 타입 정의를 위해 import
 import { parseStringPromise } from "xml2js"; // xml2js 라이브러리를 통해 XML 데이터를 JS 객체로 파싱하기 위해 import
 
-const API_KEY = process.env.NEXT_PUBLIC_SEOUL_API_KEY; // 환경변수에서 서울시 오픈API 키를 가져옴
+const API_KEY = process.env.SEOUL_API_KEY; // 환경변수에서 서울시 오픈API 키를 가져옴
 
 export default async function handler(
   req: NextApiRequest,
